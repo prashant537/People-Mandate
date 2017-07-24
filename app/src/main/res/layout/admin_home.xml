@@ -1,0 +1,100 @@
+<ScrollView
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:background="#c0c0c0"
+        android:paddingBottom="@dimen/activity_vertical_margin" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp"
+            android:id="@+id/layout1">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/button1"
+            android:layout_below="@+id/layout1">
+
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:text="ADD ELECTION CONTEST"
+                android:background="@drawable/button3"
+                android:layout_weight="1"
+                android:id="@+id/admin_home_add_election"
+                android:onClick="SelectOption"/>
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:text="REMOVE ELECTION CONTEST"
+                android:background="@drawable/button3"
+                android:layout_weight="1"
+                android:id="@+id/admin_home_remove_election"
+                android:onClick="SelectOption"/>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:text="ADD CANDIDATE"
+                android:background="@drawable/button3"
+                android:layout_weight="1"
+                android:id="@+id/admin_home_add_candidate"
+                android:onClick="SelectOption"/>
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:text="REMOVE CANDIDATE"
+                android:background="@drawable/button3"
+                android:layout_weight="1"
+                android:id="@+id/admin_home_remove_candidate"
+                android:onClick="SelectOption"/>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+                android:text="SHOW RESULTS"
+                android:background="@drawable/button3"
+                android:layout_weight="1"
+                android:id="@+id/admin_home_result"
+                android:onClick="SelectOption"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

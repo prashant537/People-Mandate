@@ -1,0 +1,71 @@
+<ScrollView
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:hint="Search Candidate Name"
+        android:textStyle="bold"
+        android:id="@+id/user_vote_search_candidate"
+        android:background="@drawable/button4"
+        android:layout_weight="1" />
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:hint="Search Party Name"
+        android:textStyle="bold"
+        android:id="@+id/user_vote_search_party"
+        android:layout_below="@+id/user_vote_search_candidate"
+        android:background="@drawable/button1"
+        android:layout_weight="1" />
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/user_vote_list"
+        android:layout_gravity="center_vertical"
+        android:layout_below="@+id/user_vote_search_party"
+        android:layout_weight="1"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/user_vote_list"
+        android:id="@+id/layout1">
+
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginLeft="4.5dp"
+            android:text="VOTE"
+            android:background="@drawable/button2"
+            android:layout_weight="1"
+            android:id="@+id/admin_login_login"
+            android:onClick="UserLogin"/>
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>
